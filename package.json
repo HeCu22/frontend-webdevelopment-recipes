@@ -1,0 +1,19 @@
+{
+  "name": "novi-webdev-eindopdracht",
+  "version": "1.0.0",
+  "description": "Novi Eindopdracht Web Development Project",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.3.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
