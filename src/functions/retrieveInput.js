@@ -1,6 +1,16 @@
 // import fetchFastRecipes from './fetchFastRecipes'
 
 import fetchCuiRecipes from './fetchCuiRecipes';
+import createCuisineList from "./createCuisineList";
+
+
+//array with cuisines;
+const cuisineList = ["African", "American", "British", "Cajun", "Caribbean", "Chinese", "Eastern European", "European", "French", "German", "Greek", "Indian", "Irish", "Italian", "Japanese", "Jewish", "Korean",
+    "Latin American", "Mediterranean", "Mexican", "Middle Eastern", "Nordic", "Southern", "Spanish", "Thai", "Vietnamese"];
+
+
+createCuisineList(cuisineList);
+
 
 // reference save of user input menucuisine
 const inputAuthor = document.getElementById('author');
@@ -33,26 +43,29 @@ form.addEventListener("submit", (e) => {
 
 
 function handleCheckbox() {
-    // Get the checkbox
-    const selectCui1 = document.getElementById("sel-cui-1");
-    const selectCui2 = document.getElementById("sel-cui-2");
+
 
     // If the checkbox is checked, display the output text
 
-    if (selectCui1.checked == true) {
+    let selCui = 0;
+    let selectCui = [];
+    for (let i = 0; i < cuisineList.length; i++) {
+        // Get the checkbox
 
-        inputCuiString = selectCui1.value;
-    } else {
-        if (selectCui2.checked == true) {
-
-            inputCuiString = selectCui2.value;
-            console.log('string input', inputCuiString);
+        selCui = `sel-cui-${i}`;
+        selectCui[i] = document.getElementById(selCui);
+        if (selectCui[i].checked === true) {
+            inputCuiString += selectCui[i].value;
+            inputCuiString += ",";
         }
+        console.log(inputCuiString);
     }
 
 
-    console.log('string', inputCuiString);
+    // cuisineInput.setAttribute("value", `${cuisines[i]}`);
 
+
+    console.log('string', inputCuiString);
 
 
 }
