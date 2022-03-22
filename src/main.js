@@ -12,14 +12,16 @@ const selectRadioQ = document.getElementById('quick');
 selectRadioC.addEventListener("keyup", (e) => {
     e.preventDefault();
     // console.log('e', selectRadioC.value);
+    menuCuisine();
 
-    fetchRecipeByIngredients("apples,+flour,+sugar").then();
+    // fetchRecipeByIngredients("apples,+flour,+sugar").then();
 })
 // event listener radio button
 selectRadioH.addEventListener("keyup", (e) => {
     e.preventDefault();
     // console.log('e', selectRadioH.value);
-    fetchRecipeByDetails("salad").then();
+    fetchRecipeByDetails("salad").t
+    hen();
 })
 // event listener radio button
 selectRadioQ.addEventListener("keydown", (e) => {
@@ -27,3 +29,7 @@ selectRadioQ.addEventListener("keydown", (e) => {
     // console.log('e', selectRadioQ.value);
     fetchFastRecipes(30).then();
 })
+
+function menuCuisine() {
+    location.href = "./menucuisine.html";
+}

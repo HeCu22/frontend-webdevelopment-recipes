@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?&family=Merriweather:wght@300;400&family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto&family=Rock+Salt&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -7,17 +8,26 @@
 }
 
 h1, h2 {
-    font-family: 'Playfair', Georgia ,serif;
-
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
 }
 
 
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     font-family: 'Roboto Condensed', Arial, sans-serif;
+
+
+}
+
+.intro {
+   text-align: left;
 }
 
 ul {
@@ -37,11 +47,47 @@ form label {
     padding: 5px;
 }
 
+/*--------------------------*/
+/*       reusable           */
+/*--------------------------*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------------------------*/
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .icon-img {
     width: 100px;
     padding: 0.001em;
     border: solid 1px lightgrey;
-    border-radius: 3px;
+    border-radius: 10%;
+}
+
+.icon-img32 {
+    width: 32px;
+    padding: 5px;
+    margin: 5px;;
 }
 
 form div {
@@ -49,13 +95,11 @@ form div {
     border-style: none;
 }
 
-.head-img {
-    width: 100%;
-    max-width: 755px;
-    border: solid 10px orange;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+#head-img {
+    padding: 5px;
+    margin: 5px;
+    border: 2px;
+    border-radius: 20px;
 }
 
 .font-p {
@@ -69,8 +113,22 @@ form div {
 
 }
 
+#top-img {
+    width: 400px;
+}
+
+#author, #tag {
+    width: 50px;
+
+}
+
+#title {
+    width: 100px;
+
+}
+
 #recipe-list {
-    max-width: 755px;
+    max-width: 500px;
 
 }
 
@@ -80,5 +138,20 @@ form div {
 }
 
 #on-submit {
+
+}
+
+.sel-cui {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    font-family: 'Merriweather', Georgia, serif;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
 
 }

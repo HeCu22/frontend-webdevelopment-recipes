@@ -5,7 +5,7 @@ const inputId = 0;
 const listItems = [];
 
 async function fetchRecipeById(inputId) {
-    inputId = 640352;
+    inputId = 716426;
 
     console.log('input', inputId);
     try {
@@ -22,7 +22,9 @@ async function fetchRecipeById(inputId) {
         });
 
         // make array from object detailsRecipe to pass it to createListLines
+
         listItems[0] = detailsRecipe.data;
+        console.log(detailsRecipe.data);
         createListLines(listItems);
 
 

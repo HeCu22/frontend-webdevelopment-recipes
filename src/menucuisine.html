@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recipes for home-style cookin'</title>
+</head>
+<head-section class="top">
+    <nav class="navbar">
+        <img class="icon-img32" src="./assets/icon-menu.png" alt="menu"/>
+        <img id="head-img" src="./assets/logo%20img%20background.png" alt="logo-vegetables"/>
+        <img class="icon-img32" src="./assets/icon-search.png" alt="find recipe"/>
+    </nav>
+    <h1>Recipes for home-style cookin'</h1>
+    <!--    <img id="top-img" src="./assets/imgcookinmoods.jpg" alt="CookingMoods" />-->
+
+    <h2>Select one of next for Cuisine!</h2>
+</head-section>
+<body class="intro">
+<form id="on-submit-cuisine">
+    <div class="row">
+        <img class="icon-img" src="./assets/cuisine.jpg" alt="cuisine"/>
+        <datablock class="column">
+            <datarow class="row">
+                <label for="author">
+                    Creative/new
+                    <input type="text" id="author" name="author" placeholder="author"/>
+                </label>
+                <label for="tag">
+                    <input type="text" id="tag" name="tab" placeholder="tag"/>
+                </label>
+            </datarow>
+            <datarrowb class="row">
+                <label for="title">
+                    Title recipe
+                    <input type="text" id="title" name="title" placeholder="Fill in title name"/>
+                </label>
+            </datarrowb>
+            <datarowc class="column">
+                <label>
+                    Cuisine
+                </label>
+            </datarowc>
+        </datablock>
+
+        <!--        <ul id="selection-list"></ul>-->
+    </div>
+
+
+    <!--    <label for="sel-cui">Hoe heb je dit recept gevonden?:</label>-->
+    <!--    <select id="sel-cui" name="sel-cui">-->
+    <!--        <option value="African">Afircan</option>-->
+    <!--        <option value="American">Americam</option>-->
+    <!--        <option value="Chinese">Chinese</option>-->
+    <!--        <option value="Italian">Italian</option>-->
+    <!--    </select>-->
+    <label for="sel-cui-1">
+        <input type="checkbox" id="sel-cui-1" value="african"/> African
+    </label>
+    <label for="sel-cui-2">
+        <input type="checkbox" id="sel-cui-2" value="american"/> American </label>
+    <label for="sel-cui-3">
+        <input type="checkbox" id="sel-cui-3" value="british"/> British </label>
+    <label for="sel-cui-4">
+        <input type="checkbox" id="sel-cui-4" value="cajun"/> Cajun </label>
+    <label for="sel-cui-5">
+        <input type="checkbox" id="sel-cui-5" value="caribbean"/> Caribbean </label>
+    <label for="sel-cui-6">
+        <input type="checkbox" id="sel-cui-6" value="chinese"/> Chinese </label>
+    <input type="submit" value="Start Search"/>
+</form>
+<ul id="recipe-list">
+    [recipelist]
+</ul>
+
+African
+American
+British
+Cajun
+Caribbean
+Chinese
+Eastern European
+European
+French
+German
+Greek
+Indian
+Irish
+Italian
+Japanese
+Jewish
+Korean
+Latin American
+Mediterranean
+Mexican
+Middle Eastern
+Nordic
+Southern
+Spanish
+Thai
+Vietnamese
+<script src="./functions/retrieveInput.js" type="module"></script>
+</body>
+</html>
