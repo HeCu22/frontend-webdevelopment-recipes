@@ -2,55 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/index.4d663569.css">
     <title>Recipes</title>
 </head>
-
+<body>
 <head-section class="top">
     <nav class="navbar">
-        <img class="icon-img32" src="./assets/icon-menu.png" alt="menu"/>
-        <img id="head-img" src="./assets/logo%20img%20background.png" alt="logo-vegetables" />
-        <img class="icon-img32" src="./assets/icon-search.png" alt="find recipe"/>
+        <a href="/menus/menuCuisine.html" target="_self"> <img class="icon-img32" src="/icon-menu.c482da66.png" alt="find recipe"> </a>
+        <img id="head-img" src="/logo%20img%20background.f87983e3.png" alt="logo-vegetables">
+        <a href="/menus/recipeDetail.html" target="_self"> <img class="icon-img32" src="/icon-search.676f7a10.png" alt="find recipe"> </a>
     </nav>
     <h1>Recipes for home-style cookin'</h1>
-    <img id="top-img" src="./assets/imgcookinmoods.jpg" alt="CookingMoods" />
+    <img id="fill-img" src="/imgcookinmoods.e4b55fe2.jpg" alt="CookingMoods">
 
     <h2>What is in your Cooking Kit!</h2>
 </head-section>
-<body>
-<form id="on-submit">
-    <label for="cuisine">
-        <input type="radio" id="cuisine" name="select" value="cuisine"/>
-        <img class="icon-img" src="./assets/cuisine.jpg" alt="cuisine"/>
-        <div>
-            <p><a href="menucuisine.html" target="_blank">Creative</a></p>
-            <p>New recipes</p>
-            <p>Specific Ingredients</p>
-        </div>
-        <ul id="selection-list"></ul>
-    </label>
-    <label for="healthy">
-        <input type="radio" id="healthy" name="select" value="healthy"/>
-        <img class="icon-img" src="./assets/healthy.jpg" alt="healthy"/>
-        <div>
-            <p> Healthy food</p>
-            <p> Slow cooker</p>
-        </div>
-    </label>
-    <label for="quick">
-        <input type="radio" id="quick" name="select" value="quick"/>
-        <img class="icon-img" src="./assets/quick-meal.jpg" alt="quick"/>
-        <div>
-            <p>Quick meal</p>
-            <p>Easy</p>
-            <p>Snack</p>
-        </div>
-    </label>
+<selcontainer>
+    <selstyle>
+        <form id="on-submit">
+            <label for="cuisine" class="row">
+                <input type="radio" id="cuisine" name="select" value="cuisine">
+                <img class="icon-img" src="/cuisine.24be9d48.jpg" alt="cuisine">
+                <descr1 class="column">
+                    <p>Creative</p>
+                    <p>New recipes</p>
+                    <p>Specific Cuisine</p>
+                </descr1>
+                <ul id="selection-list"></ul>
+            </label>
+            <label for="healthy" class="row">
+                <input type="radio" id="healthy" name="select" value="healthy">
+                <img class="icon-img" src="/healthy.b16ca0d8.jpg" alt="healthy">
+                <descr2 class="column">
+                    <p> Healthy food</p>
+                    <p> Slow cooker</p>
+                </descr2>
+            </label>
+            <label for="quick" class="row">
+                <input type="radio" id="quick" name="select" value="quick">
+                <img class="icon-img" src="/quick-meal.4621fb1f.jpg" alt="quick">
+                <descr3 class="column">
+                    <p>Quick meal</p>
+                    <p>Easy</p>
+                    <p>Snack</p>
+                </descr3>
+            </label>
 
-</form>
-<ul id="recipe-list">
-    [recipelist]
-</ul>
+        </form>
+    </selstyle>
+    <ul id="recipe-list">
+        [recipelist]
+    </ul>
+
+</selcontainer>
 <script src="main.js" type="module"></script>
 </body>
 </html>

@@ -39,7 +39,6 @@ function createCuisineList(cuisines) {
         console.log(cuisineList);
         // userInputfield.value = "";
 
-
 }
 
 export default createCuisineList;
