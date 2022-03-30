@@ -39,7 +39,8 @@ ul {
 
 selcontainer {
     max-width: 900px;
-    margin: 10px;
+    margin-left: 50px;
+    padding: 50px;
     text-align: left;
 
 }
@@ -49,18 +50,18 @@ selstyle {
 
 }
 
-
 .detail {
 
 }
 
 descr1, descr2, descr3 {
     justify-content: center;
+    width: 200px;
 }
 
 listcontainer {
     max-width: 900px;
-    margin: 10px;
+    margin: 50px;
     justify-content: center;
     align-items: flex-start;
 }
@@ -200,7 +201,7 @@ head-section {
 
 }
 
-#buttonStart, #buttonNext {
+#buttonStart {
     background-color: orange;
     font-size: medium;
     border: solid 5px darkorange;
@@ -214,7 +215,7 @@ head-section {
     background-color: darkorange;
     color: white;
     font-size: medium;
-    border: solid 5px orangered;
+    border-: solid 5px orangered;
     border-radius: 10px;
     width: 32px;
     height: 32px;
@@ -222,6 +223,33 @@ head-section {
     position: fixed;
     top: 800px;
     left: 400px;
+}
+
+#button-style1, #button-style2, #button-style3 {
+    background-color: darkorange;
+    color: white;
+    font-size: medium;
+    border: solid 5px orangered;
+    border-left: orange;
+    border-radius: 10px;
+    width: 32px;
+    height: 32px;
+    margin: 50px;
+    position: relative;
+}
+
+#button-style1:hover::after, #button-style2:hover::after, #button-style3:hover::after  {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 20px solid orangered;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: -4px;
 }
 
 #recipe-list {
